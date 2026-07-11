@@ -23,8 +23,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "setup": "run npm install",
-    "start": "node index.js"
+      "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
