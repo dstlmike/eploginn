@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width;">
+
+    <style>
+
+.btnn {
+justify-content: center;
+align-items: center;
+    }
+.myButton {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Add padding (top/bottom, left/right) */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline for anchor tags */
+  display: inline-block; /* Make the element a block for width/padding */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Add some margin */
+  cursor: pointer; /* Change cursor to a hand pointer */
+  border-radius: 8px; /* Rounded corners */
+}
+@media print {
+@page {
+    size: 8.5in 11in;
+    margin: 0; /* Optional: adjust margins as needed */
+  }
+  body {
+    width: 8.5in;
+    height: 11in;
+  }
+}
+    #pdf-content {
+        /* Ensure content doesn't break in the middle of text/images */
+        page-break-inside: avoid;
+    }
+}
+        /* CSS to style your content */
+        #content-to-export {
+            width: 8.5in; /* Set width to target size */
+            padding: 20px;
+            background: white;
+height: 11in;
+justify-content: center;
+align-items: center;
+        }
+
+
+        /* Mobile styles (default) */
+        body {
+            font-family: sans-serif;
+            width: 95%;
+            background: #f0f0f0;
+margin-left: auto;
+margin-right: auto;
+ justify-content: center;
+align-items: center;
+        }
+h1 {
+font-size: 2rem;
+ text-align: center;
+}
+.container img {
+display: block;
+  margin: auto;
+  width: 40%;
+}
+ .container {
+            background: white;
+        width: 90%;
+            border-radius: 8px;
+margin-left: auto;
+margin-right: auto;
+ justify-content: center;
+align-items: center;
+        }
+
+
+        /* Desktop styles (screens wider than 768px) */
+        @media (min-width: 768px) {
+            body {
+                background: #d1d1d1;
+               /* display: inline-block;*/
+                justify-content: center;
+align-items: center;
+width:95%;
+margin-left: auto;
+margin-right: auto;
+            }
+.container img {
+display: block;
+  margin: auto;
+  width: 40%;
+}
+            .container {
+                width: 90%; /* Mimics a fixed window feel */
+padding-left: 5%;
+padding-right: 5%;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+margin-left: auto;
+margin-right: auto;
+ justify-content: center;
+align-items: center;
+            }
+        }
+
+
+.flex-container h2 {
+
+box-shadow: 0 4px 10px blue;
+border-radius: 8px;
+width: 45%;
+padding-top: 5%;
+padding-left:3%;
+padding-right: 2%;
+font-size: 1.5rem;
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+}
+.flex-container p {
+
+box-shadow: 0 4px 10px blue;
+border-radius: 8px;
+width: 45%;
+padding-top: 5%;
+padding-left:3%;
+padding-right: 2%;
+font-size: 1rem;
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+}
+
+.flex-container {
+box-shadow: 0 4px 10px blue;
+border-radius: 8px;
+background: white;
+paddint-left: 2%;
+padding-right: 2%;
+margin-top: 5%;
+margin-bottom: 2.5%;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+ /* gap: 5%;  Optional: Adds space between the items */
+/*  justify-content: space-between;  Optional: Distributes space evenly */
+}
+
+.flex-container img {
+box-shadow: 0 4px 10px blue;
+border-radius: 8px;
+  /* Calculates width to be less than 50% to leave room for the gap */
+  width: calc(48% - 5px);
+  height: auto;
+  /* Ensures padding and border are included in the width calculation */
+  box-sizing: border-box;
+  /* Ensures images maintain aspect ratio and fill space nicely */
+  object-fit: cover;
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+margin-left:2%;
+}
+h4 {
+position: absolute;
+    top: 5%;
+    right: 5%;
+    margin: 10px; /* Optional: adds a small space from the edges */
+}
+    </style>
+</head>
+
+
+
+<body>
+<h4>Company Logo<br>Company Address</h4>
+ <div class="container">
+        <h1><br>Field Report</h1>
+<h2>We are please to present the following report</p>
+
+<p>Address: <br> 10 Devon Road<br>Brampton, Ontario<br>L6T 5B5</p>
+<p><br>Contact:<br>Customer Name<br>M: 416-555-5555<br>C: 416-555-5555<br>E:  customer.email@fieldreport.com<br>W: www.companyname.com</p>
+<p>Date Submited: April 27, 2026</p>
+<p>Last week we completed the setup for this project, we worked alongside the solar panel technicians to safely remove the solar panels from the roof.<br><br></p>
+<p>Today we started removing the old gravel from the roof to prepare the roof surface to begin removal of existing roof surface.</p>
+<p>The old gravel is being removed into a disposal bin to safely dispose of off-site, after gravel is removed and roof is clear of gravel and debris we can commence new roof system installation.</p>
+<p><br><br></p>
+<hr>
+<p><br><br></p>
+<form action="/imggnottt" method="POST" enctype="multipart/form-data">
+
+              <label for="image">Upload Image</label>
+              <input type="file" id="image" name="image" accept="image/*" required />
+                <label for="address"><br>Address: </label>
+                <input type="text" id="address" name="address" cols="40" rows="5" required />
+
+<label for="description"><br>Description: </label>
+                <input type="text" id="description" name="description" cols="40" rows="5" required />
+
+              <!--  <id="address" name="address" /> -->
+
+            <p></p>
+
+<button class="btnn" type="submit" onclick="window.Android.showToast('Button clicked!')">Upload File</button>
+
+            <p><br></p>
+        </form>
+</hr>
+</div>
+
+<div class="flex-container">
+
+<% if (items.length > 0) { %>
+            <% items.forEach(item => { %>
+
+                    <img src="data:<%= item.img.contentType %>;base64,<%= item.img.data.toString('base64') %>"/>
+<p><%= item.address %><br><%= item.img.description %></p>
+
+
+            <% }); %>
+        <% } %>
+</div>
+
+<button class="myButton">Submit Report</button>
+
+</body>
+</html>

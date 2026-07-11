@@ -1,0 +1,20 @@
+<title>Login</title>
+<link rel="stylesheet" href="/main.css">
+<h1>Login</h1>
+
+<form action="/login" method="post">
+  <input type="email" name="username" placeholder="Email...">
+  <input type="password" name="password" placeholder="Password...">
+  <input type="submit" value="Login">
+</form>
+
+<% if (messages.error) { %>
+  <p class="error"><%= messages.error %></p>
+
+<% } %>
+
+<% if (messages.info) { %>
+  <p class="info"><%= messages.info %></p>
+<% } %>
+
+<button class="button"><a href="/register">Or register...</a></button>
