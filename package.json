@@ -23,6 +23,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
+    "setup": "npm install",
     "start": "node index.js"
   },
   "author": "",
