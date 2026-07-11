@@ -7,8 +7,9 @@ const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 var routes = require('./routes/routes.js');
 var routes3 = require('./routes/routes3.js');
-
 var port = Number(process.env.NODEJS_SERVICE_PORT || process.env.PORT || 3002);
+
+var port1 = process.env.PORT;
 //LocalStrategy = require('passport-local').Strategy;
 const mongoString = process.env.MONGO_DB_S || 'mongodb://dstlmike1:308boonave@ac-oc5e8f9-shard-00-00.dv4owuj.mongodb.net:27017,ac-oc5e8f9-shard-00-01.dv4owuj.mongodb.net:27017,ac-oc5e8f9-shard-00-02.dv4owuj.mongodb.net:27017/passport?ssl=true&replicaSet=atlas-526m7w-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0';
 
@@ -27,7 +28,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(routes);
 // --------- app.use(routes3);
 
-app.listen(port, function(error) {
+app.listen(port1, function(error) {
   if(error) {
     console.log(error);
   }
